@@ -177,3 +177,71 @@ public class BaseInfo<T extends Line> {
 
 }
 ```
+
+###2018年4月16日 陈旭东 增加松饼线添加标准
+```
+GET /muffin/standard/list
+```
+参数
+```
+无
+```
+
+java对象：
+```
+public class MuffinLineStandard {
+    private int firstStirRevStandard;
+
+    private int secondStirRevMin;
+
+    private int secondStirRevMax;
+
+    private double stirTemperatureMin;
+
+    private double stirTemperatureMax;
+
+    private double proofingTemperatureMin;
+
+    private double proofingTemperatureMax;
+
+    private double proofingHumidityMin;
+
+    private double proofingHumidityMax;
+
+    private double proofingDoughTemperatureMin;
+
+    private double proofingDoughTemperatureMax;
+
+    private double muffinCenterTemperatureMin;
+
+    private double muffinCenterTemperatureMax;
+
+    private double ccp3Sus;
+}
+```
+
+返回
+```
+{
+    "rstCode": "0",
+    "data": {
+        "firstStirRevStandard": 1000,
+        "secondStirRevMin": 2600,
+        "secondStirRevMax": 3500,
+        "stirTemperatureMin": 16.5,
+        "stirTemperatureMax": 18.5,
+        "proofingTemperatureMin": 33,
+        "proofingTemperatureMax": 37,
+        "proofingHumidityMin": 38,
+        "proofingHumidityMax": 42,
+        "proofingDoughTemperatureMin": 28,
+        "proofingDoughTemperatureMax": 30,
+        "muffinCenterTemperatureMin": 93.3,
+        "muffinCenterTemperatureMax": 96.7,
+        "ccp3Sus": 3.5
+    },
+    "rstMsg": "查询成功"
+}
+```
+
+
