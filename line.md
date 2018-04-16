@@ -244,4 +244,101 @@ public class MuffinLineStandard {
 }
 ```
 
+###2018年4月16日 赵士宇 增加面包线添加标准
+```
+GET /bread/standard/list
+```
+参数
+```
+无
+```
+
+java对象：
+```
+public class BreadLineStandard {
+    private int firstStirLowTime;    
+    private int firstStirHighTime;    
+    private double firstStirTemperatureMin; 
+    private double firstStirTemperatureMax; 
+    private int fermentSetTemperatureMin;
+    private int fermentSetTemperatureMax;
+    private int fermentTimeMin;
+    private int fermentTimeMax;
+    private double fermentBreadTemperatureMin;
+    private int fermentBreadTemperatureMax;
+    private int secondStirLowTime;
+    private int secondStirHighTimeMin;
+    private int secondStirHighTimeMax;
+    private double secondStirTemperatureMin;
+    private double secondStirTemperatureMax;
+    private int proofingTemperatureMin;
+    private double proofingTemperatureMax;
+    private int proofingHumidityMin;
+    private int proofingHumidityMax;
+    private int proofingTimeMin;
+    private int proofingTimeMax;
+    private double proofingBreadTemperatureMin;
+    private double proofingBreadTemperatureMax;
+    private double cutTemperatureMin;
+    private double cutTemperatureMax;
+    private double decorateWaterPressureMin;
+    private double decorateWaterPressureMax;
+    private int bakeSetTemperatureMin;
+    private int bakeSetTemperatureMax;
+    private int bakeTimeMin;
+    private double bakeTimeMax;
+    private double bakeCenterTemperatureMin;
+    private double bakeCenterTemperatureMax;
+    private int coolingTemperatureMin;
+    private int coolingTemperatureMax;
+    private double ccp3SUS;
+}
+
+```
+
+返回
+```
+{
+    "rstCode": "0",
+    "data": {
+        "firstStirLowTime": 1,
+        "firstStirHighTime": 4,
+        "firstStirTemperatureMin": 23.5,
+        "firstStirTemperatureMax": 24.5,
+        "fermentSetTemperatureMin": 27,
+        "fermentSetTemperatureMax": 29,
+        "fermentTimeMin": 3,
+        "fermentTimeMax": 4,
+        "fermentBreadTemperatureMin": 28.9,
+        "fermentBreadTemperatureMax": 30,
+        "secondStirLowTime": 1,
+        "secondStirHighTimeMin": 8,
+        "secondStirHighTimeMax": 12,
+        "secondStirTemperatureMin": 23.5,
+        "secondStirTemperatureMax": 24.5,
+        "proofingTemperatureMin": 37,
+        "proofingTemperatureMax": 38.9,
+        "proofingHumidityMin": 86,
+        "proofingHumidityMax": 92,
+        "proofingTimeMin": 55,
+        "proofingTimeMax": 60,
+        "proofingBreadTemperatureMin": 35.5,
+        "proofingBreadTemperatureMax": 36.5,
+        "cutTemperatureMin": 35,
+        "cutTemperatureMax": 38,
+        "decorateWaterPressureMin": 0.15,
+        "decorateWaterPressureMax": 0.25,
+        "bakeSetTemperatureMin": 240,
+        "bakeSetTemperatureMax": 300,
+        "bakeTimeMin": 7,
+        "bakeTimeMax": 13,
+        "bakeCenterTemperatureMin": 93.3,
+        "bakeCenterTemperatureMax": 96.7,
+        "coolingTemperatureMin": 35,
+        "coolingTemperatureMax": 38,
+        "ccp3SUS": 2.5
+    },
+    "rstMsg": "查询成功"
+}
+```
 
