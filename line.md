@@ -258,11 +258,13 @@ java对象：
 public class BreadLineStandard {
     private int firstStirLowTime;    
     private int firstStirHighTime;    
-    private double firstStirTemperatureMin; 
+    private double firstStirTemperatureMin;
     private double firstStirTemperatureMax; 
     private int fermentSetTemperatureMin;
     private int fermentSetTemperatureMax;
-    private int fermentTimeMin;
+    private int fermentHumidityMin;
+    private int fermentHumidityMax;
+    private double fermentTimeMin;
     private int fermentTimeMax;
     private double fermentBreadTemperatureMin;
     private int fermentBreadTemperatureMax;
@@ -307,7 +309,9 @@ public class BreadLineStandard {
         "firstStirTemperatureMax": 24.5,
         "fermentSetTemperatureMin": 27,
         "fermentSetTemperatureMax": 29,
-        "fermentTimeMin": 3,
+        "fermentHumidityMin": 70,
+        "fermentHumidityMax": 85,
+        "fermentTimeMin": 3.25,
         "fermentTimeMax": 4,
         "fermentBreadTemperatureMin": 28.9,
         "fermentBreadTemperatureMax": 30,
