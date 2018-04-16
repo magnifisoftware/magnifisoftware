@@ -244,7 +244,7 @@ public class MuffinLineStandard {
 }
 ```
 
-###2018年4月16日 赵士宇 增加面包线添加标准
+###2018年4月16日 赵士宇 增加面包线添加标准.
 ```
 GET /bread/standard/list
 ```
