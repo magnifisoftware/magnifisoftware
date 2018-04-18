@@ -340,7 +340,7 @@ public class BreadLineStandard {
         "bakeCenterTemperatureMax": 96.7,
         "coolingTemperatureMin": 35,
         "coolingTemperatureMax": 38,
-        "ccp3SUS": 2.5
+        "ccp3Sus": 2.5
     },
     "rstMsg": "查询成功"
 }
