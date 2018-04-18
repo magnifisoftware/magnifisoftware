@@ -256,93 +256,49 @@ GET /bread/standard/list
 java对象：
 ```
 public class BreadLineStandard {
-    private int firstStirLowTime;    
-    private int firstStirHighTime;    
-    private double firstStirTemperatureMin;
-    private double firstStirTemperatureMax; 
-    private int fermentSetTemperatureMin;
-    private int fermentSetTemperatureMax;
-    private int fermentHumidityMin;
-    private int fermentHumidityMax;
-    private double fermentTimeMin;
-    private int fermentTimeMax;
-    private double fermentBreadTemperatureMin;
-    private int fermentBreadTemperatureMax;
-    private int secondStirLowTime;
-    private int secondStirHighTimeMin;
-    private int secondStirHighTimeMax;
-    private double secondStirTemperatureMin;
-    private double secondStirTemperatureMax;
-    private int proofingTemperatureMin;
-    private double proofingTemperatureMax;
-    private int proofingHumidityMin;
-    private int proofingHumidityMax;
-    private int proofingTimeMin;
-    private int proofingTimeMax;
-    private double proofingBreadTemperatureMin;
-    private double proofingBreadTemperatureMax;
-    private double cutTemperatureMin;
-    private double cutTemperatureMax;
-    private double decorateWaterPressureMin;
-    private double decorateWaterPressureMax;
-    private int bakeSetTemperatureMin;
-    private int bakeSetTemperatureMax;
-    private int bakeTimeMin;
-    private double bakeTimeMax;
-    private double bakeCenterTemperatureMin;
-    private double bakeCenterTemperatureMax;
-    private int coolingTemperatureMin;
-    private int coolingTemperatureMax;
-    private double ccp3SUS;
+    private int firstStirLowTime;    //一次搅拌慢速时间
+    private int firstStirHighTime;    //一次搅拌快速时间
+    private double firstStirTemperatureMin; //一次搅拌面团温度最小值
+    private double firstStirTemperatureMax; //一次搅拌面团温度最大值
+    private int fermentSetTemperatureMin;  //发酵设定温度最小值
+    private int fermentSetTemperatureMax;  //发酵设定温度最大值
+    private int fermentHumidityMin;      //发酵设定湿度最小值
+    private int fermentHumidityMax;      //发酵设定湿度最大值
+    private double fermentTimeMin;       //发酵时间最小值
+    private int fermentTimeMax;          //发酵时间最大值
+    private double fermentBreadTemperatureMin; //回锅温度最小值
+    private int fermentBreadTemperatureMax;    //回锅温度最大值
+    private int secondStirLowTime;      //二次搅拌慢速时间设定值
+    private int secondStirHighTimeMin;  //二次搅拌快速时间最小值
+    private int secondStirHighTimeMax;  //二次搅拌快速时间最大值
+    private double secondStirTemperatureMin; //二次搅拌面团温度最小值
+    private double secondStirTemperatureMax;  //二次搅拌面团温度最大值
+    private int proofingTemperatureMin;   //醒发设定温度最小值
+    private double proofingTemperatureMax;  //醒发设定温度最大值
+    private int proofingHumidityMin;    //醒发设定湿度最小值
+    private int proofingHumidityMax;    //醒发设定湿度最大值
+    private int proofingTimeMin;         //醒发设定时间最小值
+    private int proofingTimeMax;         //醒发设定时间最大值
+    private double proofingBreadTemperatureMin;  //醒发面团温度最小值
+    private double proofingBreadTemperatureMax;  //醒发面团温度最大值
+    private double cutTemperatureMin;    //切块面球温度最小值
+    private double cutTemperatureMax;    //切块面球温度最大值
+    private double decorateWaterPressureMin;  //水切割压力最小值
+    private double decorateWaterPressureMax;  //水切割压力最大值
+    private int bakeSetTemperatureMin;    //烘烤设定温度最小值
+    private int bakeSetTemperatureMax;    //烘烤设定温度最大值
+    private double bakeTimeMin;            //烘烤设定时间最小值
+    private double bakeTimeMax;            //烘烤设定时间最大值
+    private double bakeCenterTemperatureMin;  //面包中心温度最小值
+    private double bakeCenterTemperatureMax;   //面包中心温度最大值
+    private int coolingTemperatureMin;         //冷却前面包温度最小值
+    private int coolingTemperatureMax;         //冷却前面包温度最大值
+    private double ccp3Sus;                     //金属探测SUS
 }
-
 ```
 
 返回
 ```
-{
-    "rstCode": "0",
-    "data": {
-        "firstStirLowTime": 1,
-        "firstStirHighTime": 4,
-        "firstStirTemperatureMin": 23.5,
-        "firstStirTemperatureMax": 24.5,
-        "fermentSetTemperatureMin": 27,
-        "fermentSetTemperatureMax": 29,
-        "fermentHumidityMin": 70,
-        "fermentHumidityMax": 85,
-        "fermentTimeMin": 3.25,
-        "fermentTimeMax": 4,
-        "fermentBreadTemperatureMin": 28.9,
-        "fermentBreadTemperatureMax": 30,
-        "secondStirLowTime": 1,
-        "secondStirHighTimeMin": 8,
-        "secondStirHighTimeMax": 12,
-        "secondStirTemperatureMin": 23.5,
-        "secondStirTemperatureMax": 24.5,
-        "proofingTemperatureMin": 37,
-        "proofingTemperatureMax": 38.9,
-        "proofingHumidityMin": 86,
-        "proofingHumidityMax": 92,
-        "proofingTimeMin": 55,
-        "proofingTimeMax": 60,
-        "proofingBreadTemperatureMin": 35.5,
-        "proofingBreadTemperatureMax": 36.5,
-        "cutTemperatureMin": 27.5,
-        "cutTemperatureMax": 28.5,
-        "decorateWaterPressureMin": 0.15,
-        "decorateWaterPressureMax": 0.25,
-        "bakeSetTemperatureMin": 240,
-        "bakeSetTemperatureMax": 300,
-        "bakeTimeMin": 7,
-        "bakeTimeMax": 13,
-        "bakeCenterTemperatureMin": 93.3,
-        "bakeCenterTemperatureMax": 96.7,
-        "coolingTemperatureMin": 35,
-        "coolingTemperatureMax": 38,
-        "ccp3Sus": 2.5
-    },
-    "rstMsg": "查询成功"
-}
+{"rstCode":"0","data":{"firstStirLowTime":1,"firstStirHighTime":4,"firstStirTemperatureMin":23.5,"firstStirTemperatureMax":24.5,"fermentSetTemperatureMin":27,"fermentSetTemperatureMax":29,"fermentHumidityMin":70,"fermentHumidityMax":85,"fermentTimeMin":3.25,"fermentTimeMax":4,"fermentBreadTemperatureMin":28.9,"fermentBreadTemperatureMax":30,"secondStirLowTime":1,"secondStirHighTimeMin":8,"secondStirHighTimeMax":12,"secondStirTemperatureMin":23.5,"secondStirTemperatureMax":24.5,"proofingTemperatureMin":37,"proofingTemperatureMax":38.9,"proofingHumidityMin":86,"proofingHumidityMax":92,"proofingTimeMin":55,"proofingTimeMax":60,"proofingBreadTemperatureMin":35.5,"proofingBreadTemperatureMax":36.5,"cutTemperatureMin":27.5,"cutTemperatureMax":28.5,"decorateWaterPressureMin":0.15,"decorateWaterPressureMax":0.25,"bakeSetTemperatureMin":240,"bakeSetTemperatureMax":300,"bakeTimeMin":7.0,"bakeTimeMax":13.0,"bakeCenterTemperatureMin":93.3,"bakeCenterTemperatureMax":96.7,"coolingTemperatureMin":35,"coolingTemperatureMax":38,"ccp3Sus":2.5},"rstMsg":"查询成功"}
 ```
 
