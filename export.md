@@ -45,8 +45,8 @@ GET /unusual/all/export
 ```
 参数
 ```
-startTime:
-endTime:
+startTime:2018-04-01 00:00:00
+endTime:2018-04-25 23:59:59
 ```
 java对象：
 ```
@@ -65,8 +65,8 @@ GET /unusual/winspc/export
 ```
 参数
 ```
-startTime:
-endTime:
+startTime:2018-04-01 00:00:00
+endTime:2018-04-25 23:59:59
 ```
 java对象：
 ```
