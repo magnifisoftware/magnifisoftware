@@ -7,7 +7,7 @@ GET /unusual/export
 ```
 参数
 ```
-response
+无
 ```
 java对象：
 ```
@@ -28,7 +28,6 @@ GET /unusual/export/word
 ```
 ids=SH20180114001
 name=呵呵
-response
 ```
 java对象：
 ```
@@ -37,6 +36,45 @@ java对象：
 返回
 ```
 无
+```
+
+
+###导出全部质检单中的不正常信息
+```
+GET /unusual/all/export  
+```
+参数
+```
+startTime:2018-04-01 00:00:00
+endTime:2018-04-25 23:59:59
+```
+java对象：
+```
+
+```
+返回
+```
+
+```
+
+
+
+###导出时间范围内质检单中的不正常信息
+```
+GET /unusual/winspc/export  
+```
+参数
+```
+startTime:2018-04-01 00:00:00
+endTime:2018-04-25 23:59:59
+```
+java对象：
+```
+
+```
+返回
+```
+
 ```
 
 
