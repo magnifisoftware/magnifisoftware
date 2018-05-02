@@ -112,3 +112,105 @@ public class MuffinLineStandard {
 }
 ```
 
+
+###添加松饼线
+
+```
+POST muffin/increase
+```
+
+参数
+```
+{
+	"baseInfo": {
+		"qsName": "test",
+		"lineNo": "2",
+		"checkTime": "2018-05-10 01:01:00"
+	},
+	"ccp1Result": {
+		"ccp1filterName": "筛网",
+		"ccp1filterCheck": "1",
+		"ccp1filterForeign": "0",
+		"ccp1filterDesc": "test"
+	},
+	"ccp2Result": {
+		"ccp2filterName": "过滤网",
+		"ccp2filterCheck": "1",
+		"ccp2filterForeign": "0",
+		"ccp2filterDesc": "test"
+	},
+	"doughMakeResult": {
+		"productName": "全麦松饼",
+		"firstFlourRealTime": "12",
+		"secondFlourRealTime": "22",
+		"doughRealTemperature": "32"
+	},
+	"cornflourResult": {
+		"cornflourBatch": "2018-05-10",
+		"cornflourParcels": "1",
+		"note": "testtest"
+	},
+	"proofingResult": {
+		"productName": "英式松饼",
+		"realProofingTemperature": "37",
+		"realProofinglHumidity": "23",
+		"realProofingDoughTemperature": "45",
+		"proofingDesc": "test"
+	},
+	"bakeResult": {
+		"productName": "全麦松饼",
+		"realMuffinCenterTemperature": "126"
+	},
+	"coolingResult": {
+		"productName": "英式松饼",
+		"coolingRealTemperature": "37"
+	},
+	"ccp3BeforeResult": {
+		"productName": "全麦松饼",
+		"testTime": "2018-05-09 01:02:00",
+		"isFeNormal": "1",
+		"isNonFeNormal": "0",
+		"isSUSNormal": "1",
+		"ccp3BeforeDesc": "test"
+	},
+	"ccp3AfterResult": {
+		"productName": "英式松饼",
+		"testTime": "2018-05-01 01:02:00",
+		"isFeNormal": "1",
+		"isNonFeNormal": "0",
+		"isSUSNormal": "1",
+		"ccp3AfterDesc": "testtest"
+	},
+	"wrapCheckResult": {
+		"productName": "英式松饼",
+		"markCheck": "1",
+		"isFifo": "0"
+	},
+	"periodCheckResult": {
+		"productName": "全麦松饼",
+		"productDate": "2018-05-10 01:02:00",
+		"freshDate": "2018-05-12",
+		"frozenDate": "2018-05-09",
+		"dateCodeCheck": "1"
+	},
+	"sealResult": {
+		"productName": "全麦松饼",
+		"seal": ["1", "0", "1", "0", "0", "0"],
+		"sealDesc": "testtest"
+	},
+	"storageResult": {
+		"cartonDatePrint": "1",
+		"bug": "0",
+		"storagDesc": "testtesttest"
+	},
+	"assessResult": [],
+	"gmpHistorys": []
+}
+```
+
+返回
+```
+{rstCode: "0", data: null, rstMsg: "添加松饼线检查单成功"}
+```
+
+
